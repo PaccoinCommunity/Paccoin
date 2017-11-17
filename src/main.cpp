@@ -2558,7 +2558,7 @@ bool LoadBlockIndex(bool fAllowNew)
 
         bnProofOfStakeLimit = bnProofOfStakeLimitTestNet; // 0x00000fff PoS base target is fixed in testnet
         bnProofOfWorkLimit = bnProofOfWorkLimitTestNet; // 0x0000ffff PoW base target is fixed in testnet
-        nStakeMinAge = 2 * 60 * 60; // test net min age is 2 hours
+        nStakeMinAge = 1 * 30 * 60; // test net min age is 30 min
         nModifierInterval = 20 * 60; // test modifier interval is 20 minutes
         nCoinbaseMaturity = 10; // test maturity is 30 blocks
         nStakeTargetSpacing = 3 * 60; // test block spacing is 3 minutes
@@ -2600,7 +2600,7 @@ bool LoadBlockIndex(bool fAllowNew)
         block.nVersion = 1;
         block.nTime    = nChainStartTime;;
         block.nBits    = bnProofOfWorkLimit.GetCompact();
-        block.nNonce   = 174206;
+        block.nNonce   = !fTestNet ? 174206 : 35600;
 
         if (IsCalculatingGenesisBlockHash && (block.GetHash() != hashGenesisBlock)) {
 			block.nNonce = 0;
