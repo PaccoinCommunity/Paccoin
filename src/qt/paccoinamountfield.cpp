@@ -21,7 +21,7 @@ paccoinAmountField::paccoinAmountField(QWidget *parent):
     amount->setLocale(QLocale::c());
     amount->setDecimals(8);
     amount->installEventFilter(this);
-    amount->setMaximumWidth(170);
+    amount->setMaximumWidth(300);
     amount->setSingleStep(0.001);
 
     QHBoxLayout *layout = new QHBoxLayout(this);
@@ -148,6 +148,11 @@ void paccoinAmountField::unitChanged(int idx)
     // Set max length after retrieving the value, to prevent truncation
     amount->setDecimals(paccoinUnits::decimals(currentUnit));
     amount->setMaximum(qPow(10, paccoinUnits::amountDigits(currentUnit)) - qPow(10, -amount->decimals()));
+
+    // Set maximum of 1 bill for paccoins
+    if(currentUnit == 0){
+        amount->setMaximum(1000000001L);
+    }
 
     if(valid)
     {

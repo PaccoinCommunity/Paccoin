@@ -6,6 +6,7 @@ General Information:
 Please go to www.paccoin.net to find more information about paccoin
 
 ## Updates:
+* ***01/25/18*** - Version 0.1.5.2. Updated to Redemption wallet.
 * ***11/17/17*** - Version 0.1.5.1. Updated image assets according to new branding. 
 * ***4/5/17*** - Version 0.1.5.0. Upgraded openssl and added checkpoints. 
 * ***7/15/14*** - Upgraded Protocol to 60007 and version upgrade to v 0.1.4.3. This disconnects old clients to avoid Stake Forking problem that was fixed in previous version, but still vulnerable to old clients forking.
