@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>593</width>
-    <height>319</height>
+    <height>447</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -21,6 +21,9 @@
        <horstretch>0</horstretch>
        <verstretch>0</verstretch>
       </sizepolicy>
+     </property>
+     <property name="textFormat">
+      <enum>Qt::LogText</enum>
      </property>
      <property name="pixmap">
       <pixmap resource="../paccoin.qrc">:/images/about</pixmap>
@@ -63,7 +66,7 @@
           <cursorShape>IBeamCursor</cursorShape>
          </property>
          <property name="text">
-          <string notr="true">1.5.1.0</string>
+          <string notr="true">1.5.2.0</string>
          </property>
          <property name="textInteractionFlags">
           <set>Qt::LinksAccessibleByMouse|Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse</set>
@@ -91,12 +94,7 @@
         <cursorShape>IBeamCursor</cursorShape>
        </property>
        <property name="text">
-        <string>Paccoin is the digital currency ‘People’s Alternative Choice’.
-http://paccoin.net/ 
-
-Distributed under the MIT/X11 software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php.
-
-This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit (http://www.openssl.org/) and cryptographic software written by Eric Young (eay@cryptsoft.com) and UPnP software written by Thomas Bernard.</string>
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Paccoin is the digital currency ‘People’s Alternative Choice’.&lt;/p&gt;&lt;p&gt;http://paccoin.net/ &lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Release notes:&lt;/span&gt;&lt;/p&gt;&lt;p&gt;- GUI: &amp;quot;Redemption Wallet&amp;quot; notice added to the wallet.&lt;/p&gt;&lt;p&gt;- GUI Send coins: Paccoin amount and input limit size were increased from 10 mills to 1 bill paccoins.&lt;/p&gt;&lt;p&gt;- CLI: senttoaddress command modified to allow tx-comments to be used for the redemption to add $PAC address.&lt;/p&gt;&lt;p&gt;Distributed under the MIT/X11 software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php.&lt;/p&gt;&lt;p&gt;This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit (http://www.openssl.org/) and cryptographic software written by Eric Young (eay@cryptsoft.com) and UPnP software written by Thomas Bernard.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
        </property>
        <property name="alignment">
         <set>Qt::AlignJustify|Qt::AlignVCenter</set>

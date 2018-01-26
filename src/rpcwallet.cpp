@@ -307,7 +307,7 @@ Value sendtoaddress(const Array& params, bool fHelp)
     std::string txcomment;
     if (params.size() > 4 && params[4].type() != null_type && !params[4].get_str().empty())
     {
-        txcomment = params[4].get_str();
+        txcomment = "text:" + params[4].get_str();
         if (txcomment.length() > MAX_TX_COMMENT_LEN)
             txcomment.resize(MAX_TX_COMMENT_LEN);
     }
